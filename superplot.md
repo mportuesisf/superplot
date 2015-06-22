@@ -1,11 +1,17 @@
 > MIKE PORTUESI
+> 
 > 128 SOUTH CHRISTIINE
+> 
 > MOUNT CLEMENS, MI 48043
+> 
 > (313) 469-8176
+> 
 > DATE OF SUBMISSION 03/01/83
 
 > Computer Type: Atari 400/800
+> 
 > Memory Requirement: 24K
+> 
 > Requires BASIC ROM, Joystick
 
 # Superplot
@@ -14,7 +20,7 @@ Recently I purchased a copy of _COMPUTE! 's Second Book of Atari_.
 Buried among the many treasures in the book was
 an article called "Plotting Made Easy".  The program that
 accompanied the article allowed you to draw on the screen
-and have the computer write a series of PLOT-DRAWTO statements
+and have the computer write a series of `PLOT`-`DRAWTO` statements
 for use in another program. The program worked
 as advertised, but it was not without need of improvements.
 The cursor was simply a plotted pixel and erased everything
@@ -36,7 +42,7 @@ and with some cutting you may get it to run in 16K. One
 thing you might want to do to save memory is to have the
 program self-delete all the initialization code after it is
 finished running. This includes not only everything before
-line 280, but also the SETPM and INITML routines.  However,
+line 280, but also the `SETPM` and `INITML` routines.  However,
 keep in mind that the program requires more memory as it
 runs.  The program adds statements to itself to save your
 picture, so the more complex a picture is, the more memory
@@ -48,12 +54,12 @@ When you first type Superplot in, it is a very good idea
 to make a few backup copies.  Not only is this program
 self-modifying, but the computer could also lock up if you
 fail to type in the machine language data correctly. When
-you RUN the program, there will be a short pause as it
+you `RUN` the program, there will be a short pause as it
 initializes. Following this, you will be asked a series of
-questions dealing with color and luminance for the cursor, `
+questions dealing with color and luminance for the cursor,
 background, and each of the color registers. Enter the
 standard Atari color and luminance values for each of these
-prompts (the same values used in the SETCOLOR statement).
+prompts (the same values used in the `SETCOLOR` statement).
 Once the questions are over, the program sets up its
 display and you're in business.
 
@@ -61,19 +67,19 @@ display and you're in business.
 
 You should notice a set of indicators on the bottom of
 the display. The first two indicators (from left to right)
-are 'X=' and 'Y='. These tell the current location of the
+are `'X='` and `'Y='`. These tell the current location of the
 cursor. The coordinates you see there are the same as the
-X,Y values of the PLOT statement, and they point to the
-center blank spot of the cursor. The next indicator, 'C=',
+X,Y values of the `PLOT` statement, and they point to the
+center blank spot of the cursor. The next indicator, `'C='`,
 tells you what color you're drawing in.  Note that this
-inidicator is the same value as the Atari COLOR statement,
+indicator is the same value as the Atari `COLOR` statement,
 and _not_ a color register number.  The differences between
 the two are shown in the chart below. The next indicator,
-'LAST=', tells you the last thing you did on the display,
+`'LAST='`, tells you the last thing you did on the display,
 whether it was plotting a point or drawing a line. If you
 just plotted a point on the display, the indicator will
-read 'P'. If you just drew a line it will read 'D'. The
-last indicator is 'M'. This informs you of the amount of
+read `'P'`. If you just drew a line it will read `'D'`. The
+last indicator is `'M'`. This informs you of the amount of
 free memory your system has left (in bytes).  This serves as
 a warning in case you're running out of memory.  There are
 also four color bars under the text window.  These will be
@@ -89,9 +95,9 @@ the fire button.  To draw a line, move the cursor to the
 endpoint of your intended line and press the fire button
 again. The computer will draw a line to connect these two.
 To plot a single point, simply press the fire button twice.
-This actually PLOTs and DRAWTOs a line to the same spot,
+This actually `PLOT`s and `DRAWTO`s a line to the same spot,
 but when the program writes the BASIC subroutine it will
-show up as only one PLOT statement.  If you want to connect
+show up as only one `PLOT` statement.  If you want to connect
 lines, make the endpoint of the first the beginning of the
 second by pushing the fire button again after you draw the
 first line.  For example, if you want to draw a square,
@@ -106,8 +112,8 @@ fire button twice.
 4. Continue this process until the square is completed.
 
 When the program writes the BASIC subroutine, the
-instructions for the square will come out as one PLOT
-statement and a series of DRAWTOs.
+instructions for the square will come out as one `PLOT`
+statement and a series of `DRAWTO`s.
 
 ### The Color Bars
 
@@ -117,10 +123,10 @@ cursor over the appropriate bar and push the fire button.
 The next line you draw will be in the color selected. Note
 that the blank space in the middle of the cursor must be
 over the color bar to make the change.  The color register
-numbers, 'C=' numbers, COLOR values, and the color bars are
+numbers, `'C='` numbers, `COLOR` values, and the color bars are
 related as follows:
 
-|Color     | "C="      | COLOR     | Color Bar  |
+|Color     | `"C="`    | `COLOR`   | Color Bar  |
 |Register  | Indicator | Statement | on display |
 |Number    | Number    | Argument  | ( L - R )  |
 |----------|-----------|-----------|------------|
@@ -130,7 +136,7 @@ related as follows:
 | 2        | 3         | 3         | LAST       |
 
 The program will take these changes into account when
-the BASIC subroutine is written, and will add COLOR
+the BASIC subroutine is written, and will add `COLOR`
 statements at the appropriate places.
 
 ### The Console Keys
@@ -141,13 +147,13 @@ function. These are as follows:
 #### OPTION
 
 When you press this key the program will ask
-for an output device. Enter 'C:' to save your BASIC
-subroutine to cassette, 'D:filename.ext' to save your
-routine to disk, or 'P:' to list your routine out to the
-printer. This program saves the routine in LIST format. To
-enter it back in, use the ENTER command. If you saved it on
-disk, use 'ENTER "D:filename.ext"' to retrieve it from
-disk, and if you saved it to cassette use 'ENTER "C:"'.
+for an output device. Enter `'C:'` to save your BASIC
+subroutine to cassette, `'D:filename.ext'` to save your
+routine to disk, or `'P:'` to list your routine out to the
+printer. This program saves the routine in `LIST` format. To
+enter it back in, use the `ENTER` command. If you saved it on
+disk, use `'ENTER "D:filename.ext"'` to retrieve it from
+disk, and if you saved it to cassette use `'ENTER "C:"'`.
 After the program saves your routine, it will ask if you
 want to clear it out in memory. Answering 'Y' to this
 prompt will result in the computer deleting all the lines
@@ -170,8 +176,8 @@ then change the color in that register.
 
 Pressing this key will cause the computer to
 add statements to the program. All the lines you have drawn
-will automatically be converted to PLOT-DRAWTO
-statements and stored with line numbers beginning at 20000
+will automatically be converted to `PLOT`-`DRAWTO`
+statements and stored with line numbers beginning at `20000`
 and continuing upwards by increments of ten. If you do not
 press this key, the program will automatically update
 itself after every 20 lines you draw on the screen. Note
@@ -209,8 +215,8 @@ Keep this in mind as you use this option.
 
 Superplot uses a few nifty tricks to accomplish its
 various tasks. The program itself is actually a collection
-of subroutines driven by a main loop running from lines 280
-to 410. This loop reads the joystick, moves the cursor,
+of subroutines driven by a main loop running from lines `280`
+to `410`. This loop reads the joystick, moves the cursor,
 updates the indicator line, and checks the console switches
 and space bar. The program uses James E. Korenthal's
 Assembler Joystick Driver (_COMPUTE!_ No. 14, pg. 126) to
@@ -241,7 +247,7 @@ while the color of the bars remains unchanged.  After doing
 this, it sets the machine up for the first routine again.
 The program shuts off the interrupts when either modifying
 the program or saving lines.  The color bars are actually
-one line of graphics mode 3. The program POKEs the data for
+one line of graphics mode 3. The program `POKE`s the data for
 the bars in at the appropriate spot in display memory.
 
 Most of the subroutines within the program are pretty
@@ -249,17 +255,17 @@ straightforward. Each one states what it does in the
 remarks before the routine itself.  However, a few bear
 closer examination. Some of the more interesting ones are:
 
-#### CHNGCOL (Lines 1000 to 1060)
+#### `CHNGCOL` (Lines `1000` to `1060`)
 
 This routine does all
 of the color changes using the color bars at the bottom of
 the display. It is also one of the simplest parts of the
 program.  All it does is take the X coordinate of the cursor,
-divide it by 40, and take the result for the COLOR value.
+divide it by 40, and take the result for the `COLOR` value.
 Simple, isn't it?
 
 
-#### MODPROG (Lines 6000 to 6160)
+#### `MODPROG` (Lines `6000` to `6160`)
 
 This routine is the
 one that adds statements to the program. The very first
@@ -276,24 +282,25 @@ exits. For more information on how the forced read mode is
 used to update the program, see "Using the Atari Forced
 Read Mode" by Frank C. Jones in _COMPUTE's Second Book of Atari_, pg. 26.
 
-#### SETDIS (Lines 8000 to 8120)
+#### `SETDIS` (Lines `8000` to `8120`)
 
 This routine has been
 pretty much explained earlier.  First, it sets up the
 indicators in the text window. Then it modifies the last
 few bytes of the display list to allow for the display list
 interrupts and the color bar line. Next, it figures the
-appropriate spot in memory and POKEs in the data for the
+appropriate spot in memory and `POKE`s in the data for the
 color bars. Then it turns on the interrupts and exits.
 
-#### SETPM (Lines 9000 to 9170)
+#### `SETPM` (Lines `9000` to `9170`)
+
 This routine initializes
-Player/Missile graphics. Lines 9020 and 9030 figure the
+Player/Missile graphics. Lines `9020` and `9030` figure the
 addresses of the Variable Name Table and Array Table
-pointers respectively.  Line 9040 informs ANTIC of the
-location of P/M memory, and 9050 through 9090 relocate the
-string MEM$ right on top of the memory for player 0. Line
-9095 clears out MEM$, and 9110 though 9140 read in the
+pointers respectively.  Line `9040` informs ANTIC of the
+location of P/M memory, and `9050` through `9090` relocate the
+string `MEM$` right on top of the memory for player 0. Line
+`9095` clears out `MEM$`, and `9110` though `9140` read in the
 data for the cursor.
 
 ## Improvements to the Program
