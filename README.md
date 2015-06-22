@@ -10,7 +10,7 @@ The application requires an Atari 8-bit computer (400/800/XL/XE series) with Ata
 
 ## What's Here
 
-- `superplot.md` - The original article manuscript, as submitted to _COMPUTE!_ magazine.  Converted to Markdown from scanned/OCR-ed hardcopy; the original article was composed using [SuperScripsit](https://en.wikipedia.org/wiki/Scripsit) on a TRS-80 Model III computer.  _COMPUTE!_ edited the article which appeared in print.
+- `superplot.md` - The original article manuscript, as submitted to _COMPUTE!_ magazine.  Converted to Markdown from scanned/OCR-ed hardcopy; the manuscript was composed using [SuperScripsit](https://en.wikipedia.org/wiki/Scripsit) on a TRS-80 Model III computer.  _COMPUTE!_ edited the article which appeared in print.
 - `SUPRPLOT.LST` - Atari BASIC source code.  To use this on an Atari computer, you will need to convert the line endings to [ATASCII](https://en.wikipedia.org/wiki/ATASCII) conventions.  On Microsoft Windows, you can use the application [MemoPad](http://joyfulcoder.com/memopad/) to do the conversion.
 - `SUPRPLOT.BAS` - The program as tokenized Atari BASIC, ready to run on an actual Atari. (You may need to create an ATR disk image and copy the file to it).
 
