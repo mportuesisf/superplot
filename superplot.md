@@ -1,16 +1,16 @@
-MIKE PORTUESI
-128 SOUTH CHRISTIINE
-MOUNT CLEMENS, MI 48043
-(313) 469-8176
-DATE OF SUBMISSION 03/01/83
+> MIKE PORTUESI
+> 128 SOUTH CHRISTIINE
+> MOUNT CLEMENS, MI 48043
+> (313) 469-8176
+> DATE OF SUBMISSION 03/01/83
 
-Computer Type: Atari 400/800
-Memory Requirement: 24K
-Requires BASIC ROM, Joystick
+> Computer Type: Atari 400/800
+> Memory Requirement: 24K
+> Requires BASIC ROM, Joystick
 
 # Superplot
 
-Recently I purchased a copy of COMPUTE! 's Second Book of Atari.
+Recently I purchased a copy of _COMPUTE! 's Second Book of Atari_.
 Buried among the many treasures in the book was
 an article called "Plotting Made Easy".  The program that
 accompanied the article allowed you to draw on the screen
