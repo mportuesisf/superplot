@@ -4,16 +4,18 @@ A drawing utility for Atari 8-bit computers.
 
 ## About Superplot
 
-Superplot is a combination article and type-in program I submitted to [_COMPUTE!_ Magazine](https://archive.org/details/compute-magazine) in the 1980s.  They accepted the article for publication, and subsequently published it in the book [_COMPUTE!'s Atari Collection, Volume II._](https://archive.org/details/ataribooks-computes-atari-collection-vol-2)
+Superplot is a combination article and [type-in program](https://en.wikipedia.org/wiki/Type-in_program)
+I submitted to [_COMPUTE!_ Magazine](https://archive.org/details/compute-magazine) in 1983.
+They accepted the article for publication, and subsequently published it in the book
+[_COMPUTE!'s Atari Collection, Volume II._](https://archive.org/details/ataribooks-computes-atari-collection-vol-2)
 
-The application requires an Atari 8-bit computer (400/800/XL/XE series) with Atari BASIC (either cartridge-based or built-in) and 24K of memory.
+The application requires an Atari 8-bit computer (400/800/XL/XE series) with Atari BASIC (either on cartridge or built-in) and 24K of memory, as well as a joystick controller.
 
 ## What's Here
 
-- `superplot.md` - The original article, as submitted to _COMPUTE!_ magazine.
-- `SUPRPLOT.LST` - Atari BASIC source code.  To use this on an Atari computer, you will need to convert the line endings to [ATASCII](https://en.wikipedia.org/wiki/ATASCII) conventions.  On Microsoft Windows, you can use the application [MemoPad](http://joyfulcoder.com/memopad/) to do the conversion.
-- `SUPRPLOT.BAS` - The program as tokenized Atari Basic, ready to run on an actual Atari. (You may need to create an ATR disk image and copy the file to it).
-
+- `superplot.md` - The original article manuscript, as submitted to _COMPUTE!_. The manuscript is converted to Markdown from scanned/OCR-ed hardcopy; it was originally composed using [SuperScripsit](https://en.wikipedia.org/wiki/Scripsit) on a TRS-80 Model III computer. _COMPUTE!_ edited the article which appeared in print.
+- `SUPRPLOT.LST` - Atari BASIC source code.  To use this on an Atari computer, you must convert the line endings to [ATASCII](https://en.wikipedia.org/wiki/ATASCII) conventions.  On Microsoft Windows, the application [MemoPad](http://joyfulcoder.com/memopad/) will perform the conversion.
+- `SUPRPLOT.BAS` - The program as tokenized Atari BASIC, ready to run on an actual Atari. (You may need to create an ATR disk image and copy the file to it).
 
 ## License
 
