@@ -16,7 +16,7 @@
 
 # Superplot
 
-Recently I purchased a copy of _COMPUTE! 's Second Book of Atari_.
+Recently I purchased a copy of [_COMPUTE! 's Second Book of Atari_](https://archive.org/details/ataribooks-computes-second-book-of-atari).
 Buried among the many treasures in the book was
 an article called "Plotting Made Easy".  The program that
 accompanied the article allowed you to draw on the screen
@@ -219,7 +219,7 @@ of subroutines driven by a main loop running from lines `280`
 to `410`. This loop reads the joystick, moves the cursor,
 updates the indicator line, and checks the console switches
 and space bar. The program uses James E. Korenthal's
-Assembler Joystick Driver (_COMPUTE!_ No. 14, pg. 126) to
+Assembler Joystick Driver ([_COMPUTE!_ No. 14](https://archive.org/details/1981-07-compute-magazine), pg. 126) to
 read the joystick and assign delta x and y values. The
 cursor is Player 0. It is moved vertically using string
 manipulations. This technique involves fooling BASIC into
@@ -228,8 +228,8 @@ smack in the middle of player/missile memory. By
 manipulating the string, you move the player vertically
 much faster than BASIC can move it any other way short of
 machine language.  If you would like a more detailed
-explanation, see the "Outpost: Atari" column in the April
-1981 _Creative Computing_, page 194.
+explanation, see the "Outpost: Atari" column in the [April
+1981 _Creative Computing_](https://archive.org/details/creativecomputing-1981-04), page 194.
 
 The text window is one of the trickiest parts of the
 program. In order to keep it from changing all sorts of
@@ -280,7 +280,7 @@ memory and resets the pointers in the variable table. Then
 it reinitializes the arrays holding X,Y coordinates and
 exits. For more information on how the forced read mode is
 used to update the program, see "Using the Atari Forced
-Read Mode" by Frank C. Jones in _COMPUTE's Second Book of Atari_, pg. 26.
+Read Mode" by Frank C. Jones in  [_COMPUTE! 's Second Book of Atari_](https://archive.org/details/ataribooks-computes-second-book-of-atari), pg. 26.
 
 #### `SETDIS` (Lines `8000` to `8120`)
 
