@@ -6,7 +6,7 @@ A drawing utility for Atari 8-bit computers.
 
 Superplot is a combination article and [type-in program](https://en.wikipedia.org/wiki/Type-in_program)
 I submitted to [_COMPUTE!_ Magazine](https://archive.org/details/compute-magazine) in 1983.
-They accepted the article for publication, and subsequently published it in the book
+They accepted the article and subsequently published it in the book
 [_COMPUTE!'s Atari Collection, Volume II._](https://archive.org/details/ataribooks-computes-atari-collection-vol-2)
 
 The application requires an Atari 8-bit computer (400/800/XL/XE series) with Atari BASIC (either on cartridge or built-in) and 24K of memory, as well as a joystick controller.
