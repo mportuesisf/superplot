@@ -19,7 +19,7 @@ The application requires an Atari 8-bit computer (400/800/XL/XE series) with Ata
 
 ## License
 
-Superplot is Copyright (c) 1983, 2015 Michael Portuesi.
+Superplot is Copyright &copy; 1983, 2015 Michael Portuesi.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
