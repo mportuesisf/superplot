@@ -228,8 +228,8 @@ smack in the middle of player/missile memory. By
 manipulating the string, you move the player vertically
 much faster than BASIC can move it any other way short of
 machine language.  If you would like a more detailed
-explanation, see the "Outpost: Atari" column in the [April
-1981 _Creative Computing_](https://archive.org/details/creativecomputing-1981-04), page 194.
+explanation, see the "Outpost: Atari" column in the 
+[April 1981 _Creative Computing_](https://archive.org/details/creativecomputing-1981-04), page 194.
 
 The text window is one of the trickiest parts of the
 program. In order to keep it from changing all sorts of
